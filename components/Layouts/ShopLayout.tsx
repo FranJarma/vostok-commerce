@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
-import { Navbar } from '../ui/Navbar'
 import Head from 'next/head'
+import { Navbar, Footer } from '../common-ui'
 
 interface Props {
   children: React.ReactNode
@@ -26,6 +26,7 @@ export const ShopLayout: FC<Props> = ({ children, description, title, imageFullU
       <main>
         {children}
       </main>
+      <Footer/>
     </>
   )
 }

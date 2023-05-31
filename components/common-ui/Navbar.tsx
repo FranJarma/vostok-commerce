@@ -1,7 +1,7 @@
 "use client"
 import { useCheckbox, useViewport } from '../../hooks/index';
 import React from 'react'
-import { RiCloseFill, RiMenuLine, RiRocket2Fill, RiRocketFill } from "react-icons/ri";
+import { RiCloseFill, RiMenuLine, RiRocketFill } from "react-icons/ri";
 
 interface NavbarItem {
     id: string,
@@ -35,10 +35,7 @@ const NAVBAR_ITEMS: NavbarItem [] = [
 
 const scrollIntoView = (id: string) => {
     const element = document.getElementById(id);
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    if (element) element.scrollIntoView({ behavior: 'smooth' });
 }
 
 export const Navbar = () => {
@@ -60,13 +57,13 @@ export const Navbar = () => {
                     <button className="bg-violet-600 text-white rounded-md ml-auto sm:text-xs sm:p-3 md:text-base md:p-5">{GO_TO_STORE}</button>
                 </nav>
             </header>
-        : <header className={openAside ? 'bg-violet-950' : ''}>
+        : <header className={openAside ? 'bg-violet-950 fixed w-full z-10' : ''}>
             <nav>
                 <button onClick={handleChangeAside} className="text-white rounded-md ml-auto p-5 ">{!openAside ? <RiMenuLine/> : <RiCloseFill/>}</button>
             </nav>
             {
                 openAside ? 
-                <aside className="backdrop-blur-sm h-screen">
+                <aside className="backdrop-blur-sm fixed z-10 w-full h-full bg-violet-950">
                     <ul className="text-white p-5 text-center">
                         {
                             NAVBAR_ITEMS.map(item=> (
