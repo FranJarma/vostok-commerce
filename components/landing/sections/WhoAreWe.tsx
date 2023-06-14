@@ -12,7 +12,7 @@ export const WhoAreWe = () => {
                 <h2 className="self-stretch relative text-3xl sm:text-6xl text-white text-justify font-poppins">¿Quiénes somos?</h2>
               </section>
               <section className="self-stretch relative text-base sm:text-lg leading-normal text-white text-justify font-poppins">
-                <article className="mt-10">Vostok es un emprendimiento que se destaca por su temática principal de "No conocer límites". Su misión es empoderar a las personas para que superen barreras y desafíen sus propios límites a través de la moda. La empresa se inspira en el espíritu audaz y aventurero, buscando transmitir esa pasión a través de sus diseños únicos y vanguardistas.</article>
+                <article className="mt-10">Vostok es un emprendimiento que se destaca por su temática principal de &#34;No conocer límites&#34;. Su misión es empoderar a las personas para que superen barreras y desafíen sus propios límites a través de la moda. La empresa se inspira en el espíritu audaz y aventurero, buscando transmitir esa pasión a través de sus diseños únicos y vanguardistas.</article>
                 <section className="flex max-md:flex-row max-sm:flex-col gap-5 mt-10">
                   <Image
                     className="rounded-md md:w-1/2 max-sm:w-full h-auto"
