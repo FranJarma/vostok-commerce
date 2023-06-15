@@ -4,6 +4,13 @@ import marsCover from '/public/mars-cover.webp'
 
 export const NewCollection = () => {
   return (
+    <section className="block h-screen relative">
+    <Image
+        className="w-full h-full bg-center bg-cover opacity-60"
+        alt=""
+        src={marsCover}
+        fill
+      />
     <section id="new-collection" className="sm:flex flex-row justify-between pb-10">
           <section className="w-full sm:w-1/2 flex flex-col items-start justify-start mt-5 max-sm:px-[3rem] md:px-[7rem]">
             <section className="self-stretch flex flex-col items-start justify-start gap-2">
@@ -15,20 +22,8 @@ export const NewCollection = () => {
                 <button className="relative leading-normal bg-red-700 text-white p-3 rounded-md my-5 sm:p-5 inline-block max-sm:w-full">Explorar</button>
               </section>
             </section>
-            <section></section>
           </section>
-          <section className="w-full sm:w-1/2 flex flex-col items-start justify-start mt-5 max-sm:px-[3rem] md:px-[7rem]">
-            <section className="self-stretch flex flex-col items-start justify-start gap-2 relative">
-              <Image
-                className="rounded-3xl"
-                alt=""
-                src={marsCover}
-                width={800}
-                height={500}
-              />
-            </section>
-            <section></section>
-          </section>
+    </section>
     </section>
   )
 }
