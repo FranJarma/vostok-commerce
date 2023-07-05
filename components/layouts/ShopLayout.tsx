@@ -25,7 +25,7 @@ export const ShopLayout: FC<Props> = ({ children, description, title, imageFullU
       <main>
         {children}
       </main>
-      <Footer/>
+    <Footer/>
     </>
   )
 }

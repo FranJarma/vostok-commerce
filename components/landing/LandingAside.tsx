@@ -16,7 +16,7 @@ const BREAKPOINT_SIZE: number = 768;
 const NEW_COLLECTION: string = "Nueva colección";
 const HOW_ARE_WE: string = "Quiénes somos";
 const OTHER_COLLECTIONS: string = "Otras colecciones";
-const CONTACT: string = "Contacto";
+const CONTACT: string = "Subscribirse";
 const GO_TO_STORE: string = "Ir a tienda";
 const NAVBAR_ITEMS: NavbarItem [] = [
     {
@@ -62,7 +62,7 @@ export const LandingAside = () => {
                     {
                         NAVBAR_ITEMS.map(item => (
                             <span key={item.name}>
-                                <a className="p-5 hover:border-b-4 border-violet-400 sm:text-xs sm:p-1 md:text-base" onClick={() => scrollIntoView(item.id)}>{item.name}</a>
+                                <a className="p-5 hover:border-b-4 border-violet-400 sm:text-xs sm:p-1 md:text-base cursor-pointer" onClick={() => scrollIntoView(item.id)}>{item.name}</a>
                             </span>
                         ))
                     }
@@ -95,13 +95,13 @@ export const LandingAside = () => {
                         : ""
                     }
                 </header>
-                <section className="star__field">
-                    <section className="layer"></section>
-                    <section className="layer"></section>
-                    <section className="layer"></section>
-                </section>
             </>
     }
+    <section className="star__field">
+        <section className="layer"></section>
+        <section className="layer"></section>
+        <section className="layer"></section>
+    </section>
     </>
   )
 }

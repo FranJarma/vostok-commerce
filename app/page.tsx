@@ -9,12 +9,10 @@ export default function Home() {
   return (
     <>
     <LandingLayout title={TITLE} description={DESCRIPTION}>
-      <main>
         <NewCollection/>
         <WhoAreWe/>
         <OtherCollections/>
         <Subscribe/>
-      </main>
     </LandingLayout>
   </>
   );
