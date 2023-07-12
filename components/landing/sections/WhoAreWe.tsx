@@ -5,6 +5,7 @@ import vostokLogo from '/public/vostok-logo.webp'
 
 export const WhoAreWe = () => {
   return (
+    <>
     <section id="who-are-we" className="sm:flex flex-row justify-between pb-10">
           <section className="w-full flex flex-col items-start justify-start mt-5 max-sm:px-[3rem] md:px-[7rem]">
             <section className="self-stretch flex flex-col items-start justify-start gap-2">
@@ -33,5 +34,11 @@ export const WhoAreWe = () => {
             </section>
           </section>
     </section>
+    <section className="star__field">
+        <section className="layer"></section>
+        <section className="layer"></section>
+        <section className="layer"></section>
+    </section>
+    </>
   )
 }

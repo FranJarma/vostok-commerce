@@ -6,12 +6,12 @@ export const NewCollection = () => {
   return (
     <section className="h-screen w-screen">
         <Image
-          className="opacity-50 -z-10"
+          className="-z-10"
           alt=""
           src={marsCover}
           fill
         />
-    <section id="new-collection" className="sm:flex flex-row justify-between pb-10">
+    <section id="new-collection" className="sm:flex sm:flex-row-reverse justify-between pb-10">
           <section className="w-full sm:w-1/2 flex flex-col items-start justify-start mt-5 max-sm:px-[3rem] md:px-[7rem]">
             <section className="self-stretch flex flex-col items-start justify-start gap-2">
               <section className="self-stretch relative leading-normal">
